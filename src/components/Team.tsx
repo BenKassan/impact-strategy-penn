@@ -8,7 +8,7 @@ const teamMembers = [
     name: "Ben Kassan",
     role: "President & Co-Founder",
     image: "/lovable-uploads/bd7d6a64-9f0b-4675-85ca-efc1d66d04d9.png",
-    education: "Sophomore, Economics & Business Statistics",
+    education: "Junior, Economics & Business Statistics",
     description: "Ben's passion for education began with high school tutoring and led him to found a tutoring company (Quaker Tutors), where he identified inefficiencies in the education system. This experience inspired him to start ECP, focusing on strategic, data-driven solutions to address educational challenges.",
     category: "Co-Founder"
   },
@@ -16,7 +16,7 @@ const teamMembers = [
     name: "Oscar Schwartz",
     role: "Vice President & Co-Founder", 
     image: "/lovable-uploads/546792c4-f498-43a4-814a-7ceb9e62c057.png",
-    education: "Sophomore, PPE & Hispanic Studies, Minor in American Public Policy",
+    education: "Junior, PPE & Hispanic Studies, Minor in American Public Policy",
     description: "Oscar co-founded ECP and is deeply involved in education research and social impact consulting. He has worked on financial literacy initiatives, policy research, and nonprofit consulting projects. His Philadelphia background and advocacy work reflect a strong commitment to equitable education.",
     category: "Co-Founder"
   },
@@ -32,7 +32,7 @@ const teamMembers = [
     name: "Samantha Mirabal",
     role: "Analyst",
     image: "/lovable-uploads/98a94893-200e-4aa0-843a-880b57ea2f99.png", 
-    education: "First-year, Wharton School - Finance Concentration",
+    education: "Sophomore, Wharton School - Finance Concentration",
     description: "From Miami, FL, Samantha is passionate about education and financial literacy. She has prior community service experience and is involved in several campus clubs including Wharton Undergraduate Finance Club, Common Cents, and Women in Consulting. Her broad involvement positions her to contribute fresh insights.",
     category: "Analyst"
   },
@@ -40,7 +40,7 @@ const teamMembers = [
     name: "Julian Williams",
     role: "Analyst",
     image: "/lovable-uploads/f7768aa3-d3f9-43b1-ba48-08d616d0f5f3.png",
-    education: "Sophomore, College of Arts & Sciences - Philosophy & Creative Writing",
+    education: "Junior, College of Arts & Sciences - Philosophy & Creative Writing",
     description: "Julian brings a unique perspective to consulting, having worked as a preschool teacher which gave him firsthand insight into early childhood development and student engagement. His analytical and communication skills enable him to think critically about educational challenges and craft compelling solutions.",
     category: "Analyst"
   },
@@ -48,7 +48,7 @@ const teamMembers = [
     name: "Collin Wang",
     role: "Analyst", 
     image: "/lovable-uploads/cdab4171-57bb-41a6-91f5-f3b9d6b8fbdc.png",
-    education: "Freshman, Economics & Statistics",
+    education: "Sophomore, Economics & Statistics",
     description: "Originally from Pittsburgh, PA, Collin has experience interning at a children's museum and founded his own college essay-editing service, showing entrepreneurial initiative and dedication to education. He is passionate about leveraging data-driven insights to help educational organizations grow and improve.",
     category: "Analyst"
   },
@@ -56,7 +56,7 @@ const teamMembers = [
     name: "Eric Li",
     role: "Analyst",
     image: "/lovable-uploads/01e5b235-cd09-4d97-9bb3-16d76a5fa114.png",
-    education: "Freshman, Huntsman Program - Business & International Studies, Spanish, Entrepreneurship & Innovation",
+    education: "Sophomore, Huntsman Program - Business & International Studies, Spanish, Entrepreneurship & Innovation",
     description: "Eric is passionate about entrepreneurship and socially responsible investing. He serves as a product advisor and head of outreach for an education technology startup, where he's applied negotiation and product development skills. He brings an innovative, global perspective to consulting projects.",
     category: "Analyst"
   },
@@ -64,7 +64,7 @@ const teamMembers = [
     name: "Niko Mamula",
     role: "Analyst",
     image: "/lovable-uploads/2f6bc23d-463a-4c69-8fac-b11b9f521705.png",
-    education: "Sophomore, College of Arts & Sciences - PPE & French & Francophone Studies",
+    education: "Junior, College of Arts & Sciences - PPE & French & Francophone Studies",
     description: "As a Philadelphia native, Niko has witnessed the city's educational inequities firsthand and is passionate about empowering underprivileged students in his hometown. His interdisciplinary academic background and community involvement inform his approach to consulting and creating more equitable learning environments.",
     category: "Analyst"
   }
