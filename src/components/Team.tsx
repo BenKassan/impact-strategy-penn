@@ -63,8 +63,6 @@ const teamMembers = [
 ];
 
 const Team = () => {
-  const founders = teamMembers.filter(member => member.category === "Co-Founder");
-  const analysts = teamMembers.filter(member => member.category === "Analyst");
 
   const TeamSection = ({ title, members, bgColor }: { title: string, members: typeof teamMembers, bgColor: string }) => (
     <div className={`${bgColor} rounded-2xl p-6 mb-12`}>
@@ -102,8 +100,7 @@ const Team = () => {
           </p>
         </div>
 
-        <TeamSection title="Co-Founders" members={founders} bgColor="bg-primary/5" />
-        <TeamSection title="Analysts" members={analysts} bgColor="bg-secondary/50" />
+        <TeamSection title="Our Team" members={teamMembers} bgColor="bg-primary/5" />
 
         {/* Join Our Team CTA */}
         <div className="text-center bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 mt-12">
