@@ -33,11 +33,19 @@ const Hero = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline"
                 onClick={() => scrollToSection('team')}
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6 rounded-xl"
+                className="bg-background/20 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground hover:bg-background/30 hover:border-primary-foreground/50 text-lg px-8 py-6 rounded-xl transition-all"
               >
                 Meet the Team
+              </Button>
+              <Button 
+                size="lg"
+                asChild
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all"
+              >
+                <a href="https://pennclubs.com/club/penn-education-consulting/" target="_blank" rel="noopener noreferrer">
+                  Apply Now
+                </a>
               </Button>
             </div>
           </div>
