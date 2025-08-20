@@ -8,7 +8,10 @@ import Footer from "@/components/Footer";
 import { useEffect } from "react";
 
 const Index = () => {
+  console.log("Index component rendering");
+  
   useEffect(() => {
+    console.log("Index useEffect running");
     // Set page title and meta description for SEO
     document.title = "Education Consulting at Penn - Transforming Education Through Data-Driven Solutions";
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -22,6 +25,8 @@ const Index = () => {
     }
   }, []);
 
+  console.log("About to render Index JSX");
+  
   return (
     <div className="min-h-screen bg-background">
       <Header />
