@@ -21,14 +21,6 @@ const teamMembers = [
     category: "Co-Founder"
   },
   {
-    name: "Shayan Shivjit",
-    role: "Senior Advisor",
-    image: "/lovable-uploads/68d727c5-dfa9-4f0a-8680-78a97781105b.png",
-    education: "Senior, Wharton School - Finance & Consumer Psychology",
-    description: "Shayan brings strong research, strategy, and investment analysis experience, bolstered by his work at McKinsey & Co. He is passionate about using data-driven insights to help organizations grow and provides guidance to ECP's student consultants with his blend of business acumen and social impact focus.",
-    category: "Advisor"
-  },
-  {
     name: "Samantha Mirabal",
     role: "Analyst",
     image: "/lovable-uploads/98a94893-200e-4aa0-843a-880b57ea2f99.png", 
@@ -72,7 +64,6 @@ const teamMembers = [
 
 const Team = () => {
   const founders = teamMembers.filter(member => member.category === "Co-Founder");
-  const advisors = teamMembers.filter(member => member.category === "Advisor");
   const analysts = teamMembers.filter(member => member.category === "Analyst");
 
   const TeamSection = ({ title, members, bgColor }: { title: string, members: typeof teamMembers, bgColor: string }) => (
@@ -112,7 +103,6 @@ const Team = () => {
         </div>
 
         <TeamSection title="Co-Founders" members={founders} bgColor="bg-primary/5" />
-        <TeamSection title="Senior Advisor" members={advisors} bgColor="bg-accent/5" />
         <TeamSection title="Analysts" members={analysts} bgColor="bg-secondary/50" />
 
         {/* Join Our Team CTA */}
