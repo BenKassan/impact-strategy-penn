@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const teamMembers = [
   {
@@ -112,6 +114,28 @@ const Team = () => {
         <TeamSection title="Co-Founders" members={founders} bgColor="bg-primary/5" />
         <TeamSection title="Senior Advisor" members={advisors} bgColor="bg-accent/5" />
         <TeamSection title="Analysts" members={analysts} bgColor="bg-secondary/50" />
+
+        {/* Join Our Team CTA */}
+        <div className="text-center bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 mt-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">Ready to Join Our Team?</h3>
+          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+            Become part of ECP and help us drive meaningful change in Philadelphia's education landscape. 
+            We're looking for passionate Penn students who want to make an impact through data-driven consulting.
+          </p>
+          <Button 
+            size="lg"
+            asChild
+            className="bg-gradient-to-r from-primary to-primary-light text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all"
+          >
+            <a 
+              href="https://pennclubs.com/club/penn-education-consulting/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Apply Now <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );

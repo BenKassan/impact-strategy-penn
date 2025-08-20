@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, TrendingUp } from "lucide-react";
 
 const Hero = () => {
-  console.log("Hero component rendering");
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

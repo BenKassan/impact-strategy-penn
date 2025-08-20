@@ -88,16 +88,16 @@ const Contact = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline"
-                onClick={() => {
-                  const element = document.getElementById('team');
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                asChild
+                className="bg-accent hover:bg-accent-light text-accent-foreground"
               >
-                Learn About Our Team
+                <a 
+                  href="https://pennclubs.com/club/penn-education-consulting/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Apply Now
+                </a>
               </Button>
             </div>
           </div>

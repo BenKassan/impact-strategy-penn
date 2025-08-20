@@ -130,10 +130,16 @@ const Resources = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              asChild
+              className="bg-accent hover:bg-accent-light text-accent-foreground"
             >
-              Learn More About ECP
+              <a 
+                href="https://pennclubs.com/club/penn-education-consulting/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Apply Now
+              </a>
             </Button>
           </div>
         </div>
