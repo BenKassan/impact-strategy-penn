@@ -43,7 +43,7 @@ const Hero = () => {
                 asChild
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
-                <a href="https://pennclubs.com/club/penn-education-consulting/" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScvLf761s-ILBRDRn_XbaKNYukQYZyfDy4mW04-8uOXAYdP_g/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
                   Apply Now
                 </a>
               </Button>

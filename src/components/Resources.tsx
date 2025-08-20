@@ -134,7 +134,7 @@ const Resources = () => {
               className="bg-accent hover:bg-accent-light text-accent-foreground"
             >
               <a 
-                href="https://pennclubs.com/club/penn-education-consulting/" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScvLf761s-ILBRDRn_XbaKNYukQYZyfDy4mW04-8uOXAYdP_g/viewform?usp=sf_link" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

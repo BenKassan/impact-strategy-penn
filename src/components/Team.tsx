@@ -118,7 +118,7 @@ const Team = () => {
             className="bg-gradient-to-r from-primary to-primary-light text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             <a 
-              href="https://pennclubs.com/club/penn-education-consulting/" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScvLf761s-ILBRDRn_XbaKNYukQYZyfDy4mW04-8uOXAYdP_g/viewform?usp=sf_link" 
               target="_blank" 
               rel="noopener noreferrer"
             >
