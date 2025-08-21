@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Users, GraduationCap, Heart, ExternalLink } from "lucide-react";
+import { Scale, Bot, Users, Heart, ExternalLink } from "lucide-react";
 
 const Initiatives = () => {
   return (
@@ -9,8 +9,8 @@ const Initiatives = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary">Our Initiatives</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We focus on three core program pillars to tackle educational disparities 
-            and empower students across Philadelphia.
+            We focus on three key areas to drive educational transformation and create 
+            meaningful impact for students and educators alike.
           </p>
         </div>
 
@@ -18,14 +18,28 @@ const Initiatives = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300">
             <CardHeader className="text-center pb-4">
-              <BookOpen className="h-16 w-16 text-primary mx-auto mb-4" />
-              <CardTitle className="text-2xl text-primary">Tutoring</CardTitle>
+              <Scale className="h-16 w-16 text-primary mx-auto mb-4" />
+              <CardTitle className="text-2xl text-primary">Education Equal Opportunity</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground leading-relaxed">
-                Providing vital academic support to help students excel in their studies. 
-                Our tutoring initiatives are designed to address individual learning needs 
-                and close achievement gaps.
+                Advocating for equitable access to quality education for all students, 
+                regardless of their background or circumstances. We work to identify and 
+                eliminate barriers that prevent equal educational opportunities.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300">
+            <CardHeader className="text-center pb-4">
+              <Bot className="h-16 w-16 text-primary mx-auto mb-4" />
+              <CardTitle className="text-2xl text-primary">AI's Impact on Education</CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-muted-foreground leading-relaxed">
+                Exploring and harnessing the transformative potential of artificial intelligence 
+                in education. We research and implement AI-driven solutions to personalize 
+                learning and enhance educational outcomes.
               </p>
             </CardContent>
           </Card>
@@ -37,23 +51,9 @@ const Initiatives = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-muted-foreground leading-relaxed">
-                Offering guidance and personal support to students, helping them navigate 
-                their academic and personal growth. Our mentors provide ongoing encouragement 
-                and strategic advice.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300">
-            <CardHeader className="text-center pb-4">
-              <GraduationCap className="h-16 w-16 text-primary mx-auto mb-4" />
-              <CardTitle className="text-2xl text-primary">College Readiness</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground leading-relaxed">
-                Preparing high school students for the transition to higher education, 
-                equipping them with the skills and knowledge needed for success in 
-                college and beyond.
+                Connecting students with experienced mentors to provide guidance, support, 
+                and inspiration. Our mentorship programs foster personal and academic growth 
+                through meaningful relationships and strategic advice.
               </p>
             </CardContent>
           </Card>
