@@ -59,6 +59,14 @@ const teamMembers = [
     education: "Junior, College of Arts & Sciences - PPE & French & Francophone Studies",
     description: "As a Philadelphia native, Niko has witnessed the city's educational inequities firsthand and is passionate about empowering underprivileged students in his hometown. His interdisciplinary academic background and community involvement inform his approach to consulting and creating more equitable learning environments.",
     category: "Analyst"
+  },
+  {
+    name: "Sarah Wang",
+    role: "Analyst",
+    image: "/lovable-uploads/a77b28b7-0d67-4f27-9dd8-9faa19bfef2e.png",
+    education: "Sophomore, Economics & Real Estate",
+    description: "Originally from Chicago, Sarah has experience in financial literacy mentorship, coordinating housing assistance for underprivileged families, and international volunteer service. She has a strong background in serving her local community and is excited to bring that passion to addressing educational disparities and promoting economic empowerment in the Philadelphia community. She is looking forward to contributing to ECP's data-driven consulting projects.",
+    category: "Analyst"
   }
 ];
 
