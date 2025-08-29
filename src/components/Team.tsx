@@ -17,7 +17,7 @@ const teamMembers = [
     role: "Vice President & Co-Founder", 
     image: "/lovable-uploads/546792c4-f498-43a4-814a-7ceb9e62c057.png",
     education: "Junior, PPE & Hispanic Studies, Minor in American Public Policy",
-    description: "Oscar is an incoming Intern at Bain & Company in NYC. He co-founded ECP and is deeply involved in education research and social impact consulting. He has worked on financial literacy initiatives, policy research, and nonprofit consulting projects. His Philadelphia background and advocacy work reflect a strong commitment to equitable education.",
+    description: "Oscar spent this past summer at Hudson Ferris, a consulting firm focusing on nonprofits. He co-founded ECP and is deeply involved in education research and social impact consulting. He has worked on financial literacy initiatives, policy research, and nonprofit consulting projects. His Philadelphia background and advocacy work reflect a strong commitment to equitable education.",
     category: "Co-Founder"
   },
   {
