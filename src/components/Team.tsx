@@ -17,7 +17,7 @@ const teamMembers = [
     role: "Vice President & Co-Founder", 
     image: "/lovable-uploads/546792c4-f498-43a4-814a-7ceb9e62c057.png",
     education: "Junior, PPE & Hispanic Studies, Minor in American Public Policy",
-    description: "Oscar spent this past summer at Hudson Ferris, a consulting firm focusing on nonprofits. He co-founded ECP and is deeply involved in education research and social impact consulting. He has worked on financial literacy initiatives, policy research, and nonprofit consulting projects. His Philadelphia background and advocacy work reflect a strong commitment to equitable education.",
+    description: "Oscar has a passion for blending consulting with social impact to drive meaningful change. This past summer at Hudson Ferris, a nonprofit-focused consulting firm, he deepened his expertise in social impact consulting. As co-founder of ECP, he leverages this experience in education research, financial literacy initiatives, and policy research. His Philadelphia background and advocacy work fuel his commitment to creating equitable educational opportunities through strategic, data-driven solutions.",
     category: "Co-Founder"
   },
   {
