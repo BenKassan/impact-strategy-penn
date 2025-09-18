@@ -22,51 +22,35 @@ const teamMembers = [
   },
   {
     name: "Samantha Mirabal",
-    role: "Analyst",
+    role: "Project Leader",
     image: "/lovable-uploads/98a94893-200e-4aa0-843a-880b57ea2f99.png", 
     education: "Sophomore, Wharton School - Finance Concentration",
     description: "From Miami, FL, Samantha is passionate about education and financial literacy. She has prior community service experience and is involved in several campus clubs including Wharton Undergraduate Finance Club, Common Cents, and Women in Consulting. Her broad involvement positions her to contribute fresh insights.",
-    category: "Analyst"
-  },
-  {
-    name: "Julian Williams",
-    role: "Analyst",
-    image: "/lovable-uploads/f7768aa3-d3f9-43b1-ba48-08d616d0f5f3.png",
-    education: "Junior, College of Arts & Sciences - Philosophy & Creative Writing",
-    description: "Julian brings a unique perspective to consulting, having worked as a preschool teacher which gave him firsthand insight into early childhood development and student engagement. His analytical and communication skills enable him to think critically about educational challenges and craft compelling solutions.",
-    category: "Analyst"
-  },
-  {
-    name: "Collin Wang",
-    role: "Analyst", 
-    image: "/lovable-uploads/cdab4171-57bb-41a6-91f5-f3b9d6b8fbdc.png",
-    education: "Sophomore, Economics & Statistics",
-    description: "Originally from Pittsburgh, PA, Collin has experience interning at a children's museum and founded his own college essay-editing service, showing entrepreneurial initiative and dedication to education. He is passionate about leveraging data-driven insights to help educational organizations grow and improve.",
-    category: "Analyst"
+    category: "Project Leader"
   },
   {
     name: "Eric Li",
-    role: "Analyst",
+    role: "Project Leader",
     image: "/lovable-uploads/01e5b235-cd09-4d97-9bb3-16d76a5fa114.png",
     education: "Sophomore, Huntsman Program - Business & International Studies, Spanish, Entrepreneurship & Innovation",
     description: "Eric is passionate about entrepreneurship and socially responsible investing. He serves as a product advisor and head of outreach for an education technology startup, where he's applied negotiation and product development skills. He brings an innovative, global perspective to consulting projects.",
-    category: "Analyst"
+    category: "Project Leader"
   },
   {
     name: "Niko Mamula",
-    role: "Analyst",
+    role: "Project Leader",
     image: "/lovable-uploads/2f6bc23d-463a-4c69-8fac-b11b9f521705.png",
     education: "Junior, College of Arts & Sciences - PPE & French & Francophone Studies",
     description: "As a Philadelphia native, Niko has witnessed the city's educational inequities firsthand and is passionate about empowering underprivileged students in his hometown. His interdisciplinary academic background and community involvement inform his approach to consulting and creating more equitable learning environments.",
-    category: "Analyst"
+    category: "Project Leader"
   },
   {
     name: "Sarah Wang",
-    role: "Analyst",
+    role: "Project Leader",
     image: "/lovable-uploads/a77b28b7-0d67-4f27-9dd8-9faa19bfef2e.png",
     education: "Sophomore, Economics & Real Estate",
     description: "Originally from Chicago, Sarah has experience in financial literacy mentorship, coordinating housing assistance for underprivileged families, and international volunteer service. She has a strong background in serving her local community and is excited to bring that passion to addressing educational disparities and promoting economic empowerment in the Philadelphia community. She is looking forward to contributing to ECP's data-driven consulting projects.",
-    category: "Analyst"
+    category: "Project Leader"
   }
 ];
 
