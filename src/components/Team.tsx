@@ -51,6 +51,14 @@ const teamMembers = [
     education: "Sophomore, Economics & Real Estate",
     description: "Originally from Chicago, Sarah has experience in financial literacy mentorship, coordinating housing assistance for underprivileged families, and international volunteer service. She has a strong background in serving her local community and is excited to bring that passion to addressing educational disparities and promoting economic empowerment in the Philadelphia community. She is looking forward to contributing to ECP's data-driven consulting projects.",
     category: "Project Leader"
+  },
+  {
+    name: "Sebastian Cordulack",
+    role: "Project Leader",
+    image: "/lovable-uploads/sebastian-cordulack.jpeg",
+    education: "Junior, PPE (Philosophy, Politics, and Economics)",
+    description: "Sebastian brings valuable financial and consulting experience to ECP, having worked as an investment banking intern at Architect Partners, a crypto-focused M&A advisory firm. His background includes experience in venture capital and at an early-stage startup, providing him with a unique perspective on strategic business solutions. In his free time, he enjoys rock climbing, sailing, playing soccer with friends, and snowboarding.",
+    category: "Project Leader"
   }
 ];
 
