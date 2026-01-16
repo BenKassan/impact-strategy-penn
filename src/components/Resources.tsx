@@ -134,7 +134,7 @@ const Resources = () => {
               className="bg-accent hover:bg-accent-light text-accent-foreground"
             >
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScvLf761s-ILBRDRn_XbaKNYukQYZyfDy4mW04-8uOXAYdP_g/viewform?usp=sf_link" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfikpDPL_z-lMeGv-SbcDwmRic5_1W4mmOvFq67bfLzP2nbJA/viewform?usp=header" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
