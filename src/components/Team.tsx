@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 const teamMembers = [
   {
     name: "Ben Kassan",
-    role: "President & Co-Founder",
+    role: "Co-Founder",
     image: "/lovable-uploads/bd7d6a64-9f0b-4675-85ca-efc1d66d04d9.png",
     education: "Junior, Economics & Business Statistics",
     description: "Ben's passion for education began with high school tutoring and led him to found a tutoring company (Quaker Tutors), where he identified inefficiencies in the education system. This experience inspired him to start ECP, focusing on strategic, data-driven solutions to address educational challenges.",
@@ -14,7 +14,7 @@ const teamMembers = [
   },
   {
     name: "Oscar Schwartz",
-    role: "Vice President & Co-Founder", 
+    role: "Co-Founder", 
     image: "/lovable-uploads/546792c4-f498-43a4-814a-7ceb9e62c057.png",
     education: "Junior, PPE & Hispanic Studies, Minor in American Public Policy",
     description: "Oscar has a passion for blending consulting with social impact to drive meaningful change. This past summer at Hudson Ferris, a nonprofit-focused consulting firm, he deepened his expertise in social impact consulting. As an incoming McKinsey Summer Business Analyst, he brings strategic consulting experience to ECP. As co-founder, he leverages this expertise in education research, financial literacy initiatives, and policy research. His Philadelphia background and advocacy work fuel his commitment to creating equitable educational opportunities through strategic, data-driven solutions.",
@@ -22,43 +22,35 @@ const teamMembers = [
   },
   {
     name: "Samantha Mirabal",
-    role: "President",
+    role: "Co-President",
     image: "/lovable-uploads/98a94893-200e-4aa0-843a-880b57ea2f99.png", 
     education: "Sophomore, Wharton School - Finance & Marketing",
     description: "Samantha Mirabal is a sophomore in The Wharton School concentrating in Finance and Marketing. Originally from Miami, Florida, she is passionate about financial literacy, education, and giving back to the community. She first joined ECP in her freshman spring semester as an analyst and now serves as President. Outside of ECP, Samantha is involved in Penn Women in Consulting, Wharton Women, Common Cents, Wharton Undergraduate Finance Club, Wharton Management Club, and the Successful Transition and Empowerment Program (STEP). In her free time, Samantha enjoys reading, playing piano, traveling, drinking coffee, and spending time with family and friends. Feel free to reach out to her at mirabal@wharton.upenn.edu",
-    category: "Project Leader"
-  },
-  {
-    name: "Eric Li",
-    role: "Project Leader",
-    image: "/lovable-uploads/01e5b235-cd09-4d97-9bb3-16d76a5fa114.png",
-    education: "Sophomore, Huntsman Program - Business & International Studies, Spanish, Entrepreneurship & Innovation",
-    description: "Eric is passionate about entrepreneurship and socially responsible investing. He serves as a product advisor and head of outreach for an education technology startup, where he's applied negotiation and product development skills. He brings an innovative, global perspective to consulting projects.",
-    category: "Project Leader"
-  },
-  {
-    name: "Niko Mamula",
-    role: "Project Leader",
-    image: "/lovable-uploads/2f6bc23d-463a-4c69-8fac-b11b9f521705.png",
-    education: "Junior, College of Arts & Sciences - PPE & French & Francophone Studies",
-    description: "As a Philadelphia native, Niko has witnessed the city's educational inequities firsthand and is passionate about empowering underprivileged students in his hometown. His interdisciplinary academic background and community involvement inform his approach to consulting and creating more equitable learning environments.",
-    category: "Project Leader"
+    category: "Leadership"
   },
   {
     name: "Sarah Wang",
-    role: "Project Leader",
+    role: "Co-President",
     image: "/lovable-uploads/a77b28b7-0d67-4f27-9dd8-9faa19bfef2e.png",
     education: "Sophomore, Economics & Real Estate",
     description: "Originally from Chicago, Sarah has experience in financial literacy mentorship, coordinating housing assistance for underprivileged families, and international volunteer service. She has a strong background in serving her local community and is excited to bring that passion to addressing educational disparities and promoting economic empowerment in the Philadelphia community. She is looking forward to contributing to ECP's data-driven consulting projects.",
-    category: "Project Leader"
+    category: "Leadership"
   },
   {
-    name: "Sebastian Cordulack",
-    role: "Project Leader",
-    image: "/lovable-uploads/sebastian-cordulack.jpeg",
-    education: "Junior, PPE (Philosophy, Politics, and Economics)",
-    description: "Sebastian brings valuable financial and consulting experience to ECP, having worked as an investment banking intern at Architect Partners, a crypto-focused M&A advisory firm. His background includes experience in venture capital and at an early-stage startup, providing him with a unique perspective on strategic business solutions. In his free time, he enjoys rock climbing, sailing, playing soccer with friends, and snowboarding.",
-    category: "Project Leader"
+    name: "Jeremiah Braimoh",
+    role: "Vice President of Events",
+    image: "/lovable-uploads/jeremiah-braimoh.jpeg",
+    education: "Freshman, College of Arts & Sciences - Psychology",
+    description: "Jeremiah Braimoh is a freshman in The College of Arts and Sciences planning to major in Psychology. He is from Columbia, Maryland and is passionate about educational policy reform and the global mental health crisis. He joined ECP in his freshman fall semester and now serves as Vice President of Events. Outside of ECP, Jeremiah is involved in Civic Scholars and the West Philadelphia Tutoring Project. In his free time, Jeremiah enjoys running, hanging out with friends, and playing/listening to music. Feel free to reach out to him at jbraimoh@sas.upenn.edu.",
+    category: "Leadership"
+  },
+  {
+    name: "Ronan Meltzer",
+    role: "Vice President of Consulting",
+    image: "/lovable-uploads/ronan-meltzer.png",
+    education: "Freshman, College of Arts & Sciences - Mathematics & Economics",
+    description: "Ronan Meltzer is a freshman in the College studying Math and Economics. He's from Johannesburg, South Africa and cares deeply about making education more accessible—especially through tech and tutoring. Ronan joined ECP in his freshman fall and now serves as Vice President of Consulting. Before Penn, he started a tutoring program that grew to 300+ volunteer tutors helping 3,000+ kids in hospitals across Africa, and built Dare2Solve, a math platform that hit 200K monthly users. When he's not thinking about education or math, you'll probably find him listening to afrobeats, having long conversations, or trying to solve a tricky problem. Reach him at ronanmel@sas.upenn.edu.",
+    category: "Leadership"
   }
 ];
 
