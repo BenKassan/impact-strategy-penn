@@ -22,10 +22,10 @@ const teamMembers = [
   },
   {
     name: "Samantha Mirabal",
-    role: "Project Leader",
+    role: "President",
     image: "/lovable-uploads/98a94893-200e-4aa0-843a-880b57ea2f99.png", 
-    education: "Sophomore, Wharton School - Finance Concentration",
-    description: "From Miami, FL, Samantha is passionate about education and financial literacy. She has prior community service experience and is involved in several campus clubs including Wharton Undergraduate Finance Club, Common Cents, and Women in Consulting. Her broad involvement positions her to contribute fresh insights.",
+    education: "Sophomore, Wharton School - Finance & Marketing",
+    description: "Samantha Mirabal is a sophomore in The Wharton School concentrating in Finance and Marketing. Originally from Miami, Florida, she is passionate about financial literacy, education, and giving back to the community. She first joined ECP in her freshman spring semester as an analyst and now serves as President. Outside of ECP, Samantha is involved in Penn Women in Consulting, Wharton Women, Common Cents, Wharton Undergraduate Finance Club, Wharton Management Club, and the Successful Transition and Empowerment Program (STEP). In her free time, Samantha enjoys reading, playing piano, traveling, drinking coffee, and spending time with family and friends. Feel free to reach out to her at mirabal@wharton.upenn.edu",
     category: "Project Leader"
   },
   {
