@@ -51,6 +51,14 @@ const teamMembers = [
     education: "Freshman, College of Arts & Sciences - Mathematics & Economics",
     description: "Ronan Meltzer is a freshman in the College studying Math and Economics. He's from Johannesburg, South Africa and cares deeply about making education more accessible—especially through tech and tutoring. Ronan joined ECP in his freshman fall and now serves as Vice President of Consulting. Before Penn, he started a tutoring program that grew to 300+ volunteer tutors helping 3,000+ kids in hospitals across Africa, and built Dare2Solve, a math platform that hit 200K monthly users. When he's not thinking about education or math, you'll probably find him listening to afrobeats, having long conversations, or trying to solve a tricky problem. Reach him at ronanmel@sas.upenn.edu.",
     category: "Leadership"
+  },
+  {
+    name: "Imanali Koksal",
+    role: "Vice President of Finance",
+    image: "/lovable-uploads/imanali-koksal.jpg",
+    education: "Freshman, Wharton School - Finance & Minor in Computer Science",
+    description: "Imanali Koksal is from Almaty, Kazakhstan, and is studying Finance at the Wharton School with a minor in Computer Science. He joined ECP during his freshman fall and now serves as Vice President of Finance. Outside of academics, Imanali is involved in Penn Boxing and PennQVC. In his free time, he enjoys researching and testing new AI tools and exploring how emerging technologies can shape business and investing. Feel free to reach out to him at imash771@wharton.upenn.edu",
+    category: "Leadership"
   }
 ];
 
