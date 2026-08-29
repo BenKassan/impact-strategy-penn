@@ -18,7 +18,17 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Karla', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+				display: ['Outfit', 'ui-sans-serif', 'system-ui', 'sans-serif']
+			},
 			colors: {
+				'penn-blue': 'hsl(var(--penn-blue))',
+				'oxford-blue': 'hsl(var(--oxford-blue))',
+				ivory: 'hsl(var(--ivory))',
+				silver: 'hsl(var(--silver))',
+				wine: 'hsl(var(--wine))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
