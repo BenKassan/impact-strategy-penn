@@ -1,115 +1,149 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Scale, Bot, Users, Heart, ExternalLink } from "lucide-react";
+import equityImage from "@/assets/initiative-equity.jpg";
+import aiImage from "@/assets/initiative-ai.jpg";
+import mentorshipImage from "@/assets/initiative-mentorship.jpg";
+
+const initiatives = [
+  {
+    number: "01",
+    title: "Educational Equal Opportunity",
+    image: equityImage,
+    alt: "Elementary school students working at their desks in a bright classroom",
+    intro:
+      "We work to identify and remove the barriers that keep students from an equal shot at a quality education.",
+    points: [
+      "Map access gaps across Philadelphia schools and after-school programs",
+      "Build funding and resource strategies for partner nonprofits",
+      "Translate policy research into practical recommendations",
+    ],
+  },
+  {
+    number: "02",
+    title: "AI's Impact on Education",
+    image: aiImage,
+    alt: "A high school student studying on a laptop in a modern study space",
+    intro:
+      "We study how artificial intelligence is reshaping classrooms, and help partners adopt it responsibly.",
+    points: [
+      "Evaluate AI tutoring and assessment tools for real classroom fit",
+      "Design guidance for educators on responsible AI use",
+      "Research personalization and its effect on student outcomes",
+    ],
+  },
+  {
+    number: "03",
+    title: "Mentorship",
+    image: mentorshipImage,
+    alt: "A college-age mentor helping a younger student with schoolwork",
+    intro:
+      "We connect students with mentors who provide guidance, structure, and a path forward.",
+    points: [
+      "Build and refine mentorship program models for partners",
+      "Support tutoring and college readiness pipelines",
+      "Measure engagement and long-term student impact",
+    ],
+  },
+];
 
 const Initiatives = () => {
   return (
-    <section id="initiatives" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary">Our Initiatives</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We focus on three key areas to drive educational transformation and create 
-            meaningful impact for students and educators alike.
-          </p>
+    <section id="initiatives" className="bg-background">
+      <div className="mx-auto max-w-[1400px] px-6 pt-24 lg:px-10 md:pt-32">
+        <div className="grid gap-6 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="eyebrow">02 — Initiatives</p>
+            <h2 className="mt-4 font-serif text-4xl leading-tight text-penn-blue md:text-5xl">
+              What We Do
+            </h2>
+          </div>
+          <div className="md:col-span-8">
+            <p className="max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
+              Our work is organized around three focus areas. Each one pairs a student
+              consulting team with a partner organization and a defined deliverable.
+            </p>
+          </div>
         </div>
+      </div>
 
-        {/* Three Pillars */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300">
-            <CardHeader className="text-center pb-4">
-              <Scale className="h-16 w-16 text-primary mx-auto mb-4" />
-              <CardTitle className="text-2xl text-primary">Education Equal Opportunity</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground leading-relaxed">
-                Advocating for equitable access to quality education for all students, 
-                regardless of their background or circumstances. We work to identify and 
-                eliminate barriers that prevent equal educational opportunities.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300">
-            <CardHeader className="text-center pb-4">
-              <Bot className="h-16 w-16 text-primary mx-auto mb-4" />
-              <CardTitle className="text-2xl text-primary">AI's Impact on Education</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground leading-relaxed">
-                Exploring and harnessing the transformative potential of artificial intelligence 
-                in education. We research and implement AI-driven solutions to personalize 
-                learning and enhance educational outcomes.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300">
-            <CardHeader className="text-center pb-4">
-              <Users className="h-16 w-16 text-primary mx-auto mb-4" />
-              <CardTitle className="text-2xl text-primary">Mentorship</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-muted-foreground leading-relaxed">
-                Connecting students with experienced mentors to provide guidance, support, 
-                and inspiration. Our mentorship programs foster personal and academic growth 
-                through meaningful relationships and strategic advice.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Featured Partnership */}
-        <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 md:p-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="flex items-center justify-center mb-6">
-              <Heart className="h-12 w-12 text-accent mr-4" />
-              <h3 className="text-2xl md:text-3xl font-bold text-primary">Featured Partnership</h3>
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        {initiatives.map((item, index) => (
+          <div
+            key={item.number}
+            className={`grid items-center gap-10 py-20 md:grid-cols-2 md:gap-16 ${
+              index > 0 ? "rule" : "mt-16"
+            }`}
+          >
+            <div className={index % 2 === 1 ? "md:order-2" : ""}>
+              <img
+                src={item.image}
+                alt={item.alt}
+                loading="lazy"
+                width={1200}
+                height={912}
+                className="aspect-[4/3] w-full object-cover"
+              />
             </div>
-            
-            <div className="text-center mb-8">
-              <h4 className="text-xl md:text-2xl font-semibold text-primary mb-4">
-                Philly Book Bank Collaboration
-              </h4>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                We're proud to partner with the Philly Book Bank, a Philadelphia nonprofit 
-                dedicated to fostering literacy by providing free, high-quality, culturally 
-                relevant books to children from birth through high school.
+            <div className={index % 2 === 1 ? "md:order-1" : ""}>
+              <p className="font-display text-xs uppercase tracking-[0.22em] text-wine">
+                {item.number}
               </p>
+              <h3 className="mt-4 font-serif text-3xl leading-tight text-penn-blue md:text-4xl">
+                {item.title}
+              </h3>
+              <p className="mt-5 max-w-[55ch] text-lg leading-relaxed text-oxford-blue/85">
+                {item.intro}
+              </p>
+              <ul className="mt-8 space-y-4">
+                {item.points.map((point, i) => (
+                  <li
+                    key={point}
+                    className="flex gap-5 border-t border-silver/60 pt-4 text-oxford-blue/80"
+                  >
+                    <span className="font-display text-xs tracking-widest text-silver">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
+          </div>
+        ))}
+      </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-background/80 rounded-xl p-6">
-                <h5 className="text-lg font-semibold text-primary mb-3">Our Impact Together</h5>
-                <ul className="space-y-2 text-muted-foreground">
-                  <li>• Over 250,000 books distributed in the past 5 years</li>
-                  <li>• Community events and pop-up libraries</li>
-                  <li>• Partnerships with local organizations</li>
-                  <li>• Data-driven strategy to maximize reach</li>
-                </ul>
-              </div>
-              <div className="bg-background/80 rounded-xl p-6">
-                <h5 className="text-lg font-semibold text-primary mb-3">Located At</h5>
-                <p className="text-muted-foreground mb-4">
-                  Martin Luther King High School, distributing books through 
-                  community events, sidewalk libraries, and strategic partnerships 
-                  to create literacy-rich environments across Philadelphia.
-                </p>
-                <div className="text-lg font-medium text-accent">
-                  "Raising a city of readers"
+      {/* Featured partnership */}
+      <div className="bg-oxford-blue py-24 md:py-32">
+        <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <p className="font-display text-xs uppercase tracking-[0.22em] text-ivory/50">
+                Featured Partnership
+              </p>
+              <h3 className="mt-4 font-serif text-3xl leading-tight text-ivory md:text-4xl">
+                Philly Book Bank
+              </h3>
+            </div>
+            <div className="md:col-span-8">
+              <p className="max-w-[60ch] text-lg leading-relaxed text-ivory/80">
+                We partner with the Philly Book Bank, a Philadelphia nonprofit dedicated to
+                fostering literacy by providing free, high-quality, culturally relevant books
+                to children from birth through high school. Based at Martin Luther King High
+                School, it distributes books through community events, sidewalk libraries, and
+                strategic partnerships across the city.
+              </p>
+              <div className="mt-12 grid gap-px border-t border-ivory/15 sm:grid-cols-2">
+                <div className="border-b border-ivory/15 py-6 sm:border-r sm:pr-8">
+                  <div className="font-serif text-4xl text-ivory">250,000+</div>
+                  <p className="mt-2 text-sm text-ivory/60">
+                    books distributed over the past five years
+                  </p>
+                </div>
+                <div className="border-b border-ivory/15 py-6 sm:pl-8">
+                  <div className="font-serif text-4xl text-ivory">"Raising a city of readers"</div>
+                  <p className="mt-2 text-sm text-ivory/60">
+                    community events, pop-up libraries, and local partnerships
+                  </p>
                 </div>
               </div>
-            </div>
-
-            <div className="text-center">
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                Learn More About Our Partnerships
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </Button>
             </div>
           </div>
         </div>

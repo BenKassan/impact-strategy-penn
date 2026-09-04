@@ -1,115 +1,80 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Mail, Users, Heart, ArrowRight } from "lucide-react";
+const APPLY_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSfikpDPL_z-lMeGv-SbcDwmRic5_1W4mmOvFq67bfLzP2nbJA/viewform?usp=header";
+
+const audiences = [
+  {
+    title: "Prospective Partners",
+    copy: "Education organizations looking for strategic consulting and data-driven solutions.",
+  },
+  {
+    title: "Students",
+    copy: "Penn students interested in joining our team and making an impact in education.",
+  },
+  {
+    title: "Supporters",
+    copy: "Anyone who shares our commitment to educational equity and wants to get involved.",
+  },
+];
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary">Get in Touch</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Ready to partner with us or learn more about our educational consulting services? 
-              We'd love to hear from you.
+    <section id="contact" className="bg-oxford-blue py-24 md:py-32">
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="grid gap-6 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <p className="font-display text-xs uppercase tracking-[0.22em] text-ivory/50">
+              05 — Contact
             </p>
+            <h2 className="mt-4 font-serif text-4xl leading-tight text-ivory md:text-5xl">
+              Get in Touch
+            </h2>
           </div>
-
-          {/* Contact Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 text-center">
-              <CardContent className="p-8">
-                <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-primary mb-2">Prospective Partners</h3>
-                <p className="text-muted-foreground text-sm">
-                  Educational organizations looking for strategic consulting and data-driven solutions
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 text-center">
-              <CardContent className="p-8">
-                <Heart className="h-12 w-12 text-accent mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-primary mb-2">Students</h3>
-                <p className="text-muted-foreground text-sm">
-                  Penn students interested in joining our team and making an impact in education
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-card hover:shadow-elegant transition-all duration-300 text-center">
-              <CardContent className="p-8">
-                <Mail className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-primary mb-2">Supporters</h3>
-                <p className="text-muted-foreground text-sm">
-                  Anyone who shares our interest in educational equity and wants to get involved
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Main Contact Section */}
-          <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 md:p-12 text-center">
-            <div className="mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-                Let's Work Together
-              </h3>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-                Whether you're an educational organization seeking consulting services, 
-                a student passionate about making a difference, or someone who shares our 
-                commitment to educational equity, we're eager to connect.
-              </p>
-            </div>
-
-            <div className="bg-background/80 rounded-xl p-6 mb-8 max-w-md mx-auto">
-              <div className="flex items-center justify-center mb-4">
-                <Mail className="h-6 w-6 text-primary mr-3" />
-                <span className="text-lg font-semibold text-primary">Contact Us</span>
-              </div>
-              <a 
-                href="mailto:educationconsultingatpenn@gmail.com"
-                className="text-lg text-accent hover:text-accent-light transition-colors font-medium"
+          <div className="md:col-span-8">
+            <p className="max-w-[60ch] text-lg leading-relaxed text-ivory/80">
+              Whether you are an education organization seeking consulting support, a student
+              who wants to make a difference, or someone who shares our commitment to
+              educational equity, we would like to hear from you.
+            </p>
+            <a
+              href="mailto:educationconsultingatpenn@gmail.com"
+              className="mt-10 block break-words font-serif text-2xl text-ivory underline decoration-wine decoration-2 underline-offset-8 transition-colors hover:text-silver md:text-4xl"
+            >
+              educationconsultingatpenn@gmail.com
+            </a>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a
+                href={APPLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit rounded-full bg-ivory px-8 py-3 font-display text-xs uppercase tracking-[0.18em] text-penn-blue transition-colors hover:bg-silver"
               >
-                educationconsultingatpenn@gmail.com
+                Apply Now
+              </a>
+              <a
+                href="mailto:educationconsultingatpenn@gmail.com"
+                className="w-fit rounded-full border border-ivory/50 px-8 py-3 font-display text-xs uppercase tracking-[0.18em] text-ivory transition-colors hover:bg-ivory/10"
+              >
+                Send Us an Email
               </a>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                asChild
-                className="bg-gradient-to-r from-primary to-primary-light text-primary-foreground"
-              >
-                <a href="mailto:educationconsultingatpenn@gmail.com">
-                  Send Us an Email
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-              <Button 
-                size="lg" 
-                asChild
-                className="bg-accent hover:bg-accent-light text-accent-foreground"
-              >
-                <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfikpDPL_z-lMeGv-SbcDwmRic5_1W4mmOvFq67bfLzP2nbJA/viewform?usp=header" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Apply Now
-                </a>
-              </Button>
-            </div>
-          </div>
-
-          {/* Footer Note */}
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground">
-              We typically respond to inquiries within 24-48 hours. 
-              Thank you for your interest in Education Consulting at Penn!
-            </p>
           </div>
         </div>
+
+        <div className="mt-20 grid gap-px border-t border-ivory/15 md:grid-cols-3">
+          {audiences.map((item, i) => (
+            <div
+              key={item.title}
+              className={`py-8 md:px-10 ${i > 0 ? "md:border-l md:border-ivory/15" : "md:pl-0"}`}
+            >
+              <h3 className="font-serif text-xl text-ivory">{item.title}</h3>
+              <p className="mt-3 max-w-xs text-sm leading-relaxed text-ivory/60">{item.copy}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-12 text-sm text-ivory/50">
+          We typically respond to inquiries within 24–48 hours.
+        </p>
       </div>
     </section>
   );
