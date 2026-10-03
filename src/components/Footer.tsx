@@ -28,8 +28,8 @@ const Footer = () => {
               </span>
             </div>
             <p className="mt-6 max-w-sm leading-relaxed text-ivory/70">
-              Partnering with Philadelphia education initiatives to provide strategic,
-              data-informed solutions that drive meaningful student outcomes.
+              Strategy and AI curricula for the organizations shaping Philadelphia's young
+              people.
             </p>
           </div>
 
