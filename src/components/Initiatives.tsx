@@ -173,7 +173,7 @@ const Initiatives = () => {
                     className="max-h-full w-auto max-w-full object-contain"
                   />
                 </div>
-                <div className="mt-auto border-t border-silver/60 px-6 py-5">
+                <div className="border-t border-silver/60 px-6 py-5">
                   <p className="font-display text-[0.68rem] uppercase tracking-[0.18em] text-wine">
                     {partner.focus}
                   </p>
