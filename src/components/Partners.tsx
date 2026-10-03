@@ -20,7 +20,6 @@ const partners = [
     metrics: [
       { figure: "24,000", label: "people served across 24 Detroit hubs" },
       { figure: "3", label: "reading levels gained per child" },
-      { figure: "31", label: "cities on its expansion waitlist" },
     ],
     work: "Built strategy for expanding Brilliant Cities into Philadelphia",
     logo: brilliantLogo,
@@ -71,7 +70,8 @@ const Partners = () => {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 border-t border-silver/60 pt-5 text-sm leading-relaxed text-oxford-blue/85">
+              <div className="min-h-6 grow" />
+              <p className="border-t border-silver/60 pt-5 text-sm leading-relaxed text-oxford-blue/85">
                 <span className="font-display text-xs uppercase tracking-[0.14em] text-wine">
                   ECP's work
                 </span>
