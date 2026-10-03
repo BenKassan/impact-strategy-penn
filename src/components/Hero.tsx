@@ -6,7 +6,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section id="home" className="relative flex min-h-[60vh] items-center justify-center overflow-hidden">
       <img
         src={heroImage}
         alt="The Philadelphia skyline at golden hour"
@@ -16,7 +16,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-oxford-blue/70" />
 
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
+      <div className="relative mx-auto max-w-4xl px-6 pb-12 pt-28 text-center">
         <p className="font-display text-[0.7rem] uppercase tracking-[0.3em] text-ivory/70">
           University of Pennsylvania
         </p>
@@ -36,7 +36,7 @@ const Hero = () => {
             Meet the Team
           </button>
           <button
-            onClick={() => scrollToSection("initiatives")}
+            onClick={() => scrollToSection("partners")}
             className="rounded-full border border-ivory/60 px-8 py-3 font-display text-xs uppercase tracking-[0.18em] text-ivory transition-colors hover:bg-ivory/10"
           >
             Our Work

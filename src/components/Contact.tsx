@@ -26,7 +26,7 @@ const Contact = () => {
             </p>
             <a
               href="mailto:educationconsultingatpenn@gmail.com"
-              className="mt-10 block break-words font-serif text-2xl text-ivory underline decoration-wine decoration-2 underline-offset-8 transition-colors hover:text-silver md:text-4xl"
+              className="mt-6 block break-words text-lg font-bold text-ivory underline decoration-wine decoration-2 underline-offset-4 transition-colors hover:text-silver"
             >
               educationconsultingatpenn@gmail.com
             </a>
@@ -55,15 +55,12 @@ const Contact = () => {
               key={item.title}
               className={`py-8 md:px-10 ${i > 0 ? "md:border-l md:border-ivory/15" : "md:pl-0"}`}
             >
-              <h3 className="font-serif text-xl text-ivory">{item.title}</h3>
+              <h3 className="font-serif text-lg text-ivory">{item.title}</h3>
               <p className="mt-3 max-w-xs text-sm leading-relaxed text-ivory/60">{item.copy}</p>
             </div>
           ))}
         </div>
 
-        <p className="mt-12 text-sm text-ivory/50">
-          We reply within 48 hours.
-        </p>
       </div>
     </section>
   );

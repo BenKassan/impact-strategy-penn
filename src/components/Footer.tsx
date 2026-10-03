@@ -1,8 +1,8 @@
 const links = [
   { label: "Who We Are", id: "about" },
+  { label: "Partners", id: "partners" },
   { label: "What We Do", id: "initiatives" },
-  { label: "Leadership", id: "team" },
-  { label: "Resources", id: "resources" },
+  { label: "Team", id: "team" },
   { label: "Contact", id: "contact" },
 ];
 
