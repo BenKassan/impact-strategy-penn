@@ -22,7 +22,7 @@ const partners = [
       { figure: "3", label: "reading levels gained per child" },
       { figure: "31", label: "cities on its expansion waitlist" },
     ],
-    work: "Built the case for embedding Brilliant in Philadelphia Housing Authority family housing.",
+    work: "Built strategy for expanding Brilliant Cities into Philadelphia",
     logo: brilliantLogo,
   },
   {
