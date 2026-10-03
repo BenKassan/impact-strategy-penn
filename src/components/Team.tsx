@@ -42,16 +42,12 @@ const founders = [
     role: "Co-Founder",
     image: "/lovable-uploads/bd7d6a64-9f0b-4675-85ca-efc1d66d04d9.png",
     education: "Senior, Economics & Business Statistics",
-    description:
-      "Tutoring in high school led Ben to found Quaker Tutors, where he saw firsthand the inefficiencies in how education is delivered. He started ECP to address them with data-driven strategy.",
   },
   {
     name: "Oscar Schwartz",
     role: "Co-Founder",
     image: "/lovable-uploads/546792c4-f498-43a4-814a-7ceb9e62c057.png",
     education: "Senior, PPE & Hispanic Studies, minor in American Public Policy",
-    description:
-      "Oscar works at the intersection of consulting and social impact. He consulted for nonprofits at Hudson Ferris. A Philadelphia native, he brings policy research and advocacy experience to ECP.",
   },
 ];
 
@@ -123,9 +119,6 @@ const Team = () => {
                     {member.role}
                   </p>
                   <p className="mt-2 text-sm text-muted-foreground">{member.education}</p>
-                  <p className="mt-4 border-t border-silver/60 pt-4 text-sm leading-relaxed text-oxford-blue/80">
-                    {member.description}
-                  </p>
                 </div>
               </article>
             ))}
