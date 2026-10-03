@@ -53,11 +53,11 @@ const founders = [
 
 const Team = () => {
   return (
-    <section id="team" className="bg-background py-24 md:py-32">
+    <section id="team" className="bg-background py-12 md:py-16">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="grid gap-6 md:grid-cols-12">
           <div className="md:col-span-4">
-            <p className="eyebrow">03 — Leadership</p>
+            <p className="eyebrow">04 — Leadership</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight text-penn-blue md:text-5xl">
               Our Team
             </h2>
@@ -70,7 +70,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="mt-20 grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
           {teamMembers.map((member) => (
             <article key={member.name} className="group">
               <div className="overflow-hidden bg-ivory">
@@ -78,30 +78,33 @@ const Team = () => {
                   src={member.image}
                   alt={`${member.name}, ${member.role}`}
                   loading="lazy"
-                  className="aspect-[4/5] w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0"
+                  className="aspect-[8/5] w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0"
                 />
               </div>
-              <h3 className="mt-6 font-serif text-2xl text-penn-blue">{member.name}</h3>
+              <h3 className="mt-4 font-serif text-xl text-penn-blue">{member.name}</h3>
               <p className="mt-1 font-display text-[0.7rem] uppercase tracking-[0.18em] text-wine">
                 {member.role}
               </p>
-              <p className="mt-2 text-sm text-muted-foreground">{member.education}</p>
-              <p className="mt-4 border-t border-silver/60 pt-4 text-sm leading-relaxed text-oxford-blue/80">
-                {member.description}
-              </p>
+              <p className="mt-1 text-sm text-muted-foreground">{member.education.split(",")[0]}</p>
+              <details className="mt-3 border-t border-silver/60 pt-3 text-sm">
+                <summary className="cursor-pointer font-display text-[0.65rem] uppercase tracking-[0.16em] text-penn-blue">
+                  Read bio
+                </summary>
+                <p className="mt-3 leading-relaxed text-oxford-blue/80">{member.description}</p>
+              </details>
             </article>
           ))}
         </div>
 
-        <div className="mt-24 border-t border-silver/60 pt-16">
+        <div className="mt-12 border-t border-silver/60 pt-8">
           <p className="font-display text-xs uppercase tracking-[0.22em] text-wine">
             Founders
           </p>
 
-          <div className="mt-12 grid gap-x-10 gap-y-14 sm:grid-cols-2">
+          <div className="mt-6 flex flex-wrap gap-x-12 gap-y-6">
             {founders.map((member) => (
-              <article key={member.name} className="group flex items-start gap-6">
-                <div className="w-28 shrink-0 overflow-hidden bg-ivory sm:w-32">
+              <article key={member.name} className="group flex items-center gap-4">
+                <div className="w-16 shrink-0 overflow-hidden bg-ivory">
                   <img
                     src={member.image}
                     alt={`${member.name}, ${member.role}`}
@@ -110,23 +113,26 @@ const Team = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl text-penn-blue">{member.name}</h3>
+                  <h3 className="font-serif text-lg text-penn-blue">{member.name}</h3>
                   <p className="mt-1 font-display text-[0.7rem] uppercase tracking-[0.18em] text-wine">
                     {member.role}
                   </p>
-                  <p className="mt-2 text-sm text-muted-foreground">{member.education}</p>
                 </div>
               </article>
             ))}
           </div>
         </div>
 
-        <div className="mt-24 flex flex-col items-start gap-6 border-t border-silver/60 pt-12 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col items-start gap-6 border-t border-silver/60 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h3 className="font-serif text-3xl text-penn-blue">Join Our Team</h3>
             <p className="mt-3 max-w-[50ch] leading-relaxed text-oxford-blue/80">
               We recruit Penn students who want to do real consulting work for organizations
               shaping Philadelphia's education. No consulting experience needed; we train you.
+            </p>
+            <p className="mt-3 max-w-[60ch] text-sm leading-relaxed text-oxford-blue/70">
+              Every member gets full CaseBasix consulting training: case prep, firm-specific test
+              prep and 2,000+ practice questions.
             </p>
           </div>
           <a
