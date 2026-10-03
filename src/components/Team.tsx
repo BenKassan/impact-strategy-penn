@@ -78,7 +78,7 @@ const Team = () => {
                   src={member.image}
                   alt={`${member.name}, ${member.role}`}
                   loading="lazy"
-                  className="aspect-[8/5] w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0"
+                  className="aspect-[8/5] w-full object-cover object-[center_30%] grayscale transition-all duration-500 group-hover:grayscale-0"
                 />
               </div>
               <h3 className="mt-4 font-serif text-xl text-penn-blue">{member.name}</h3>
