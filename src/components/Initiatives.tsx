@@ -6,8 +6,6 @@ const initiatives = [
   {
     number: "01",
     title: "AI's Impact on Education",
-    image: aiImage,
-    alt: "A high school student studying on a laptop in a modern study space",
     intro:
       "We study how artificial intelligence is reshaping classrooms, and help partners adopt it responsibly.",
     points: [
@@ -19,8 +17,6 @@ const initiatives = [
   {
     number: "02",
     title: "Strategy on Educational Equal Opportunity",
-    image: equityImage,
-    alt: "Elementary school students working at their desks in a bright classroom",
     intro:
       "We build practical strategies that help education organizations expand opportunity across Philadelphia.",
     points: [
