@@ -82,21 +82,9 @@ const Initiatives = () => {
         {initiatives.map((item, index) => (
           <div
             key={item.number}
-            className={`grid items-center gap-7 py-12 sm:grid-cols-12 md:gap-10 md:py-14 ${
-              index > 0 ? "rule" : "mt-10 md:mt-12"
-            }`}
+            className={`py-12 md:py-14 ${index > 0 ? "rule" : "mt-10 md:mt-12"}`}
           >
-            <div className={`sm:col-span-5 ${index % 2 === 1 ? "sm:order-2" : ""}`}>
-              <img
-                src={item.image}
-                alt={item.alt}
-                loading="lazy"
-                width={1200}
-                height={912}
-                className="aspect-[4/3] w-full object-cover sm:max-h-[300px]"
-              />
-            </div>
-            <div className={`sm:col-span-7 ${index % 2 === 1 ? "sm:order-1" : ""}`}>
+            <div className="max-w-3xl">
               <p className="font-display text-xs uppercase tracking-[0.22em] text-wine">
                 {item.number}
               </p>

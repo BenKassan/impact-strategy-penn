@@ -26,8 +26,9 @@ const Hero = () => {
           at Penn
         </h1>
         <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-ivory/80 md:text-lg">
-          We partner with Philadelphia education initiatives to deliver strategic,
-          data-informed solutions that drive meaningful student outcomes.
+          We help education organisations prepare young people for an AI-driven world,
+          building AI curricula and growth strategies for partners that have served over
+          250,000 youth.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <button
