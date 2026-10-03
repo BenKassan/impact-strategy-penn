@@ -52,14 +52,14 @@ const About = () => {
               {stats.map((stat, i) => (
                 <div
                   key={stat.figure}
-                  className={`flex min-w-0 items-baseline gap-2 sm:gap-4 md:px-8 lg:px-10 ${
+                  className={`min-w-0 md:px-8 lg:px-10 ${
                     i > 0 ? "border-l border-silver/60 pl-3 sm:pl-5" : "md:pl-0"
                   }`}
                 >
                   <div className="shrink-0 font-serif text-3xl leading-none text-wine sm:text-5xl md:text-6xl">
                     {stat.figure}
                   </div>
-                  <p className="text-[0.68rem] leading-snug text-oxford-blue/75 sm:text-sm md:max-w-[16rem] md:text-base">
+                  <p className="mt-3 text-[0.68rem] leading-snug text-oxford-blue/75 sm:text-sm md:max-w-[18rem] md:text-base">
                     {stat.label}
                   </p>
                 </div>
