@@ -44,20 +44,22 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-ivory pb-24 md:pb-32">
+      <section className="bg-ivory pb-16 md:pb-20">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-          <div className="rule pt-16">
+          <div className="rule pt-10 md:pt-12">
             <p className="eyebrow">The Challenge</p>
-            <div className="mt-12 grid gap-12 md:grid-cols-3 md:gap-0">
+            <div className="mt-7 grid grid-cols-3 gap-3 md:mt-8 md:gap-0">
               {stats.map((stat, i) => (
                 <div
                   key={stat.figure}
-                  className={`md:px-10 ${i > 0 ? "md:border-l md:border-silver/60" : "md:pl-0"}`}
+                  className={`flex min-w-0 items-baseline gap-2 sm:gap-4 md:px-8 lg:px-10 ${
+                    i > 0 ? "border-l border-silver/60 pl-3 sm:pl-5" : "md:pl-0"
+                  }`}
                 >
-                  <div className="font-serif text-6xl leading-none text-wine md:text-7xl">
+                  <div className="shrink-0 font-serif text-3xl leading-none text-wine sm:text-5xl md:text-6xl">
                     {stat.figure}
                   </div>
-                  <p className="mt-5 max-w-xs text-base leading-relaxed text-oxford-blue/75">
+                  <p className="text-[0.68rem] leading-snug text-oxford-blue/75 sm:text-sm md:max-w-[16rem] md:text-base">
                     {stat.label}
                   </p>
                 </div>
