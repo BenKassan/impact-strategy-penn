@@ -26,9 +26,9 @@ const Hero = () => {
           at Penn
         </h1>
         <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-ivory/80 md:text-lg">
-          We help education organisations prepare young people for an AI-driven world,
-          building AI curricula and growth strategies for partners that have served over
-          250,000 youth.
+          We partner with leading education and youth organizations, from national
+          early-childhood models to Philadelphia's youth workforce system, to deliver
+          strategy and AI-driven curricula that reach thousands of young people.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <button
@@ -41,7 +41,7 @@ const Hero = () => {
             onClick={() => scrollToSection("initiatives")}
             className="rounded-full border border-ivory/60 px-8 py-3 font-display text-xs uppercase tracking-[0.18em] text-ivory transition-colors hover:bg-ivory/10"
           >
-            What We Do
+            Our Work
           </button>
         </div>
       </div>
