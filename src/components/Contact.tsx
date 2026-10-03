@@ -2,18 +2,9 @@ const APPLY_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfikpDPL_z-lMeGv-SbcDwmRic5_1W4mmOvFq67bfLzP2nbJA/viewform?usp=header";
 
 const audiences = [
-  {
-    title: "Prospective Partners",
-    copy: "Education organizations looking for strategic consulting and data-driven solutions.",
-  },
-  {
-    title: "Students",
-    copy: "Penn students interested in joining our team and making an impact in education.",
-  },
-  {
-    title: "Supporters",
-    copy: "Anyone who shares our commitment to educational equity and wants to get involved.",
-  },
+  { title: "Organizations", copy: "Looking for strategy or AI curriculum support? Tell us about your next challenge." },
+  { title: "Penn Students", copy: "Want to consult for organizations that reach thousands of young people? Apply to join." },
+  { title: "Supporters", copy: "Share our commitment to educational opportunity? Get involved." },
 ];
 
 const Contact = () => {
@@ -31,9 +22,7 @@ const Contact = () => {
           </div>
           <div className="md:col-span-8">
             <p className="max-w-[60ch] text-lg leading-relaxed text-ivory/80">
-              Whether you are an education organization seeking consulting support, a student
-              who wants to make a difference, or someone who shares our commitment to
-              educational equity, we would like to hear from you.
+              Tell us what you're working on. We'd like to hear from you.
             </p>
             <a
               href="mailto:educationconsultingatpenn@gmail.com"
@@ -73,7 +62,7 @@ const Contact = () => {
         </div>
 
         <p className="mt-12 text-sm text-ivory/50">
-          We typically respond to inquiries within 24–48 hours.
+          We reply within 48 hours.
         </p>
       </div>
     </section>

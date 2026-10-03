@@ -2,51 +2,11 @@ const APPLY_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfikpDPL_z-lMeGv-SbcDwmRic5_1W4mmOvFq67bfLzP2nbJA/viewform?usp=header";
 
 const resourceCategories = [
-  {
-    title: "Resume & Career Docs",
-    items: [
-      "Consulting resume templates",
-      "Cover letter guides (McKinsey, BCG, Bain)",
-      "Fit interview question bank",
-      "Career development resources",
-    ],
-  },
-  {
-    title: "BCG Material",
-    items: [
-      "BCG Consulting Career Assessment (CCA)",
-      "BCG Casey interactive chatbot",
-      "BCG Quantitative Reasoning Test prep",
-      "BCG Pymetrics Test guidance",
-    ],
-  },
-  {
-    title: "McKinsey Games & Guides",
-    items: [
-      "McKinsey Solve games (Red Rock, Ecosystem)",
-      "McKinsey Sea Wolf game prep",
-      "Digital assessment strategies",
-      "Problem-solving frameworks",
-    ],
-  },
-  {
-    title: "Bain & Company",
-    items: [
-      "Bain TestGorilla prep",
-      "Bain SOVA online tests",
-      "Analytical skills development",
-      "Assessment format guides",
-    ],
-  },
-  {
-    title: "Extra Materials",
-    items: [
-      "Free case interview books",
-      "Business acumen primers",
-      "Consulting Starter Pack",
-      "2,000+ quantitative practice questions",
-    ],
-  },
+  { title: "Career Docs", items: ["Consulting resume templates", "Cover letter guides (McKinsey, BCG, Bain)", "Fit-interview question bank"] },
+  { title: "BCG", items: ["Casey chatbot", "Consulting Career Assessment", "Quantitative reasoning test prep", "Pymetrics guidance"] },
+  { title: "McKinsey", items: ["Solve games (Red Rock, Ecosystem, Sea Wolf)", "Digital assessment strategies", "Problem-solving frameworks"] },
+  { title: "Bain", items: ["TestGorilla and SOVA test prep", "Assessment format guides"] },
+  { title: "Extras", items: ["2,000+ quantitative practice questions", "Case interview books", "Business primers", "Consulting Starter Pack"] },
 ];
 
 const Resources = () => {
@@ -62,9 +22,8 @@ const Resources = () => {
           </div>
           <div className="md:col-span-8">
             <p className="max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
-              Every new ECP member completes consulting training through our partnership with
-              CaseBasix, building the problem-solving and analytical toolkit our partners rely
-              on. The same library is open to the broader Penn community.
+              Every ECP member completes consulting training through our partnership with
+              CaseBasix. The library is also open to the wider Penn community.
             </p>
           </div>
         </div>
@@ -101,7 +60,7 @@ const Resources = () => {
 
         <div className="mt-16 flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-[45ch] text-lg leading-relaxed text-oxford-blue/85">
-            Join ECP to access these resources and build the toolkit behind our work.
+            Join ECP to get access.
           </p>
           <a
             href={APPLY_URL}
