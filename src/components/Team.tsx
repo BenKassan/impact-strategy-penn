@@ -109,7 +109,7 @@ const Team = () => {
 
           <div className="mt-12 grid gap-x-10 gap-y-14 sm:grid-cols-2">
             {founders.map((member) => (
-              <article key={member.name} className="group flex gap-6">
+              <article key={member.name} className="group flex items-start gap-6">
                 <div className="w-28 shrink-0 overflow-hidden bg-ivory sm:w-32">
                   <img
                     src={member.image}
