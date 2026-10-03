@@ -37,7 +37,7 @@ const partners = [
   {
     name: "Brilliant Cities",
     position: "One of the country's most proven early-childhood models.",
-    metrics: ["24,000 people served across 24 hubs"],
+    metrics: [{ figure: "24,000", label: "people served across 24 hubs" }],
     work: "Built the strategy for its expansion into Philadelphia and a blueprint for 31 cities.",
     logo: brilliantLogo,
   },
@@ -45,9 +45,9 @@ const partners = [
     name: "Philadelphia Youth Network",
     position: "Philadelphia's lead youth workforce organisation, and a national model.",
     metrics: [
-      "250,000+ young people put to work",
-      "$51M+ paid to youth in wages",
-      "140+ organisations coordinated",
+      { figure: "250,000+", label: "young people put to work" },
+      { figure: "$51M+", label: "paid to youth in wages" },
+      { figure: "140+", label: "organisations coordinated" },
     ],
     work: "Built AI curricula preparing PYN's youth for an AI-driven workplace.",
     logo: pynLogo,
@@ -56,8 +56,8 @@ const partners = [
     name: "TCBMe",
     position: "A pioneer at the intersection of AI skills and youth well-being.",
     metrics: [
-      "Top 1% of US nonprofits — five-time Candid Transparency Seal",
-      "Backed by IRB-funded research",
+      { figure: "Top 1%", label: "of US nonprofits — five-time Candid Transparency Seal" },
+      { figure: "IRB", label: "funded research backing its work" },
     ],
     work: "Designed a gamified AI curriculum for TCBMe's workforce programme.",
     logo: tcbmeLogo,
@@ -173,13 +173,12 @@ const Initiatives = () => {
                 </p>
                 <ul className="mt-5 space-y-3 border-t border-silver/60 pt-5">
                   {partner.metrics.map((metric) => {
-                    const [figure, ...rest] = metric.split(" ");
                     return (
-                      <li key={metric} className="flex items-baseline gap-2 text-oxford-blue">
+                      <li key={metric.label} className="flex items-baseline gap-2 text-oxford-blue">
                         <strong className="shrink-0 font-serif text-xl font-normal text-wine">
-                          {figure}
+                          {metric.figure}
                         </strong>
-                        <span className="text-sm leading-snug">{rest.join(" ")}</span>
+                        <span className="text-sm leading-snug">{metric.label}</span>
                       </li>
                     );
                   })}

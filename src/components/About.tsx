@@ -37,7 +37,7 @@ const About = () => {
                 Our members are trained consultants first and advocates always. Every project
                 pairs a small team of Penn undergraduates with a partner organization to
                 deliver work that is practical, evidence-based, and built to outlast the
-                semester — from tutoring and mentorship models to college readiness pipelines.
+                semester — from tutoring programs to college readiness pipelines.
               </p>
             </div>
           </div>
