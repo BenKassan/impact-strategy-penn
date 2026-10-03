@@ -53,19 +53,19 @@ const partners = [
     name: "Philly Book Bank",
     focus: "Strategy Project",
     detail: "250,000+ books distributed over the past five years",
-    logo: pbbLogo.url,
+    logo: pbbLogo,
   },
   {
     name: "TCBMe",
     focus: "AI-Integration",
     detail: "Edtech NGO",
-    logo: tcbmeLogo.url,
+    logo: tcbmeLogo,
   },
   {
     name: "Philadelphia Youth Network",
     focus: "AI-Integration",
     detail: "Largest youth-workforce program in Philadelphia, having served over 200,000+",
-    logo: pynLogo.url,
+    logo: pynLogo,
   },
   {
     name: "Brilliant Cities",
