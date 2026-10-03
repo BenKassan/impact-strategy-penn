@@ -1,16 +1,6 @@
 const stats = [
-  {
-    figure: "71%",
-    label: "of Philadelphia's 4th graders are not reading at grade level",
-  },
-  {
-    figure: "52%",
-    label: "of adults in Philadelphia are functionally illiterate",
-  },
-  {
-    figure: "4",
-    label: "affordable after-school programs offer high-impact tutoring citywide",
-  },
+  { figure: "71%", label: "of Philadelphia fourth graders are not reading at grade level" },
+  { figure: "52%", label: "of Philadelphia adults are functionally illiterate" },
 ];
 
 const About = () => {
@@ -27,17 +17,15 @@ const About = () => {
             </div>
             <div className="md:col-span-8">
               <p className="max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
-                Education Consulting at Penn is a student-run consultancy that partners with
-                Philadelphia education initiatives to enhance their effectiveness. We bring
-                rigorous research, financial analysis, and strategic planning to nonprofits,
-                schools, and after-school programs that are working to close the city's
-                opportunity gap.
+                Education Consulting at Penn is a student-run consultancy for organizations
+                working to close Philadelphia's opportunity gap. Our partners include nonprofits,
+                schools and youth programs, and we bring them research, financial analysis and
+                strategy they would otherwise have to buy.
               </p>
               <p className="mt-6 max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
-                Our members are trained consultants first and advocates always. Every project
-                pairs a small team of Penn undergraduates with a partner organization to
-                deliver work that is practical, evidence-based, and built to outlast the
-                semester — from tutoring programs to college readiness pipelines.
+                Each project pairs a small team of trained Penn consultants with one partner and
+                one defined deliverable. The work is built to be used after the semester ends,
+                from AI curricula to growth strategies.
               </p>
             </div>
           </div>
@@ -48,7 +36,7 @@ const About = () => {
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
           <div className="rule pt-10 md:pt-12">
             <p className="eyebrow">The Challenge</p>
-            <div className="mt-7 grid grid-cols-3 gap-3 md:mt-8 md:gap-0">
+            <div className="mt-7 grid max-w-4xl grid-cols-2 gap-3 md:mt-8 md:gap-0">
               {stats.map((stat, i) => (
                 <div
                   key={stat.figure}

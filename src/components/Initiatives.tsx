@@ -5,24 +5,22 @@ import brilliantLogo from "@/assets/partners/brilliant-cities.svg";
 const initiatives = [
   {
     number: "01",
-    title: "AI's Impact on Education",
-    intro:
-      "We study how artificial intelligence is reshaping classrooms, and help partners adopt it responsibly.",
+    title: "AI in Education",
+    intro: "We help education organizations put AI to work for young people, and do it responsibly.",
     points: [
+      "Design AI curricula that prepare youth for an AI-driven workplace",
       "Evaluate AI tutoring and assessment tools for real classroom fit",
-      "Design guidance for educators on responsible AI use",
-      "Research personalization and its effect on student outcomes",
+      "Write guidance for educators on responsible AI use",
     ],
   },
   {
     number: "02",
-    title: "Strategy on Educational Equal Opportunity",
-    intro:
-      "We build practical strategies that help education organizations expand opportunity across Philadelphia.",
+    title: "Strategy for Educational Opportunity",
+    intro: "We build strategies that help education organizations grow and reach more students.",
     points: [
+      "Build partnership, funding and growth strategies for partner nonprofits",
       "Map access gaps across schools and after-school programs",
-      "Build funding, growth, and resource strategies for partner nonprofits",
-      "Translate research into practical recommendations",
+      "Turn research into recommendations partners can act on",
     ],
   },
 ];
@@ -31,17 +29,21 @@ const partners = [
   {
     name: "Brilliant Cities",
     position: "One of the country's most proven early-childhood models.",
-    metrics: [{ figure: "24,000", label: "people served across 24 hubs" }],
-    work: "Built the strategy for its expansion into Philadelphia and a blueprint for 31 cities.",
+    metrics: [
+      { figure: "24,000", label: "people served across 24 Detroit hubs" },
+      { figure: "3", label: "reading levels gained per child" },
+      { figure: "31", label: "cities on its expansion waitlist" },
+    ],
+    work: "Built the case for embedding Brilliant in Philadelphia Housing Authority family housing.",
     logo: brilliantLogo,
   },
   {
     name: "Philadelphia Youth Network",
-    position: "Philadelphia's lead youth workforce organisation, and a national model.",
+    position: "Philadelphia's lead youth workforce organization, and a national model.",
     metrics: [
       { figure: "250,000+", label: "young people put to work" },
       { figure: "$51M+", label: "paid to youth in wages" },
-      { figure: "140+", label: "organisations coordinated" },
+      { figure: "140+", label: "organizations coordinated" },
     ],
     work: "Built AI curricula preparing PYN's youth for an AI-driven workplace.",
     logo: pynLogo,
@@ -50,10 +52,11 @@ const partners = [
     name: "TCBMe",
     position: "A pioneer at the intersection of AI skills and youth well-being.",
     metrics: [
-      { figure: "Top 1%", label: "of US nonprofits — five-time Candid Transparency Seal" },
-      { figure: "IRB", label: "funded research backing its work" },
+      { figure: "85%", label: "of participants showed significant gains in La Salle University research" },
+      { figure: "$50K", label: "Well City Challenge grand prize" },
+      { figure: "Top 1%", label: "of US nonprofits for transparency (five-time Candid Platinum Seal)" },
     ],
-    work: "Designed a gamified AI curriculum for TCBMe's workforce programme.",
+    work: "Designed a gamified AI curriculum for TCBMe's workforce program.",
     logo: tcbmeLogo,
   },
 ];
@@ -64,15 +67,15 @@ const Initiatives = () => {
       <div className="mx-auto max-w-[1400px] px-6 pt-24 lg:px-10 md:pt-32">
         <div className="grid gap-6 md:grid-cols-12">
           <div className="md:col-span-4">
-            <p className="eyebrow">02 — Initiatives</p>
+            <p className="eyebrow">02 — What We Do</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight text-penn-blue md:text-5xl">
               What We Do
             </h2>
           </div>
           <div className="md:col-span-8">
             <p className="max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
-              Our work is organized around two focus areas. Each one pairs a student
-              consulting team with a partner organization and a defined deliverable.
+              Our work runs through two practices. Each pairs a student team with a partner and
+              a defined deliverable.
             </p>
           </div>
         </div>
@@ -126,8 +129,7 @@ const Initiatives = () => {
             </div>
             <div className="md:col-span-8">
               <p className="max-w-[60ch] text-lg leading-relaxed text-ivory/80">
-                The figures lead each story, while every engagement pairs research with a
-                practical strategy built for the organisation's next stage.
+                We partner with organizations at the top of their fields.
               </p>
             </div>
           </div>
