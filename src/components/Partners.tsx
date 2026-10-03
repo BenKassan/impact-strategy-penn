@@ -20,7 +20,6 @@ const partners = [
     metrics: [
       { figure: "24,000", label: "people served across 24 Detroit hubs" },
       { figure: "3", label: "reading levels gained per child" },
-      { figure: "31", label: "cities on its expansion waitlist" },
     ],
     work: "Built strategy for expanding Brilliant Cities into Philadelphia",
     logo: brilliantLogo,
