@@ -1,6 +1,10 @@
 import equityImage from "@/assets/initiative-equity.jpg";
 import aiImage from "@/assets/initiative-ai.jpg";
 import mentorshipImage from "@/assets/initiative-mentorship.jpg";
+import pbbLogo from "@/assets/partners/pbb.png.asset.json";
+import tcbmeLogo from "@/assets/partners/tcbme.png.asset.json";
+import pynLogo from "@/assets/partners/pyn.png.asset.json";
+import brilliantLogo from "@/assets/partners/brilliant-cities.svg";
 
 const initiatives = [
   {
@@ -41,6 +45,33 @@ const initiatives = [
       "Support tutoring and college readiness pipelines",
       "Measure engagement and long-term student impact",
     ],
+  },
+];
+
+const partners = [
+  {
+    name: "Philly Book Bank",
+    focus: "Strategy Project",
+    detail: "250,000+ books distributed over the past five years",
+    logo: pbbLogo.url,
+  },
+  {
+    name: "TCBMe",
+    focus: "AI-Integration",
+    detail: "Edtech NGO",
+    logo: tcbmeLogo.url,
+  },
+  {
+    name: "Philadelphia Youth Network",
+    focus: "AI-Integration",
+    detail: "Largest youth-workforce program in Philadelphia, having served over 200,000+",
+    logo: pynLogo.url,
+  },
+  {
+    name: "Brilliant Cities",
+    focus: "Strategy",
+    detail: "Neighborhood-powered model for early childhood success",
+    logo: brilliantLogo,
   },
 ];
 
@@ -110,41 +141,48 @@ const Initiatives = () => {
         ))}
       </div>
 
-      {/* Featured partnership */}
+      {/* Featured Partnerships */}
       <div className="bg-oxford-blue py-24 md:py-32">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-          <div className="grid gap-10 md:grid-cols-12">
+          <div className="grid gap-6 md:grid-cols-12">
             <div className="md:col-span-4">
               <p className="font-display text-xs uppercase tracking-[0.22em] text-ivory/50">
-                Featured Partnership
+                Featured Partnerships
               </p>
               <h3 className="mt-4 font-serif text-3xl leading-tight text-ivory md:text-4xl">
-                Philly Book Bank
+                Who We Work With
               </h3>
             </div>
             <div className="md:col-span-8">
               <p className="max-w-[60ch] text-lg leading-relaxed text-ivory/80">
-                We partner with the Philly Book Bank, a Philadelphia nonprofit dedicated to
-                fostering literacy by providing free, high-quality, culturally relevant books
-                to children from birth through high school. Based at Martin Luther King High
-                School, it distributes books through community events, sidewalk libraries, and
-                strategic partnerships across the city.
+                Every engagement pairs a student consulting team with a Philadelphia
+                organization working on the ground. These are the partners we are building
+                with right now.
               </p>
-              <div className="mt-12 grid gap-px border-t border-ivory/15 sm:grid-cols-2">
-                <div className="border-b border-ivory/15 py-6 sm:border-r sm:pr-8">
-                  <div className="font-serif text-4xl text-ivory">250,000+</div>
-                  <p className="mt-2 text-sm text-ivory/60">
-                    books distributed over the past five years
-                  </p>
-                </div>
-                <div className="border-b border-ivory/15 py-6 sm:pl-8">
-                  <div className="font-serif text-4xl text-ivory">"Raising a city of readers"</div>
-                  <p className="mt-2 text-sm text-ivory/60">
-                    community events, pop-up libraries, and local partnerships
-                  </p>
-                </div>
-              </div>
             </div>
+          </div>
+
+          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {partners.map((partner) => (
+              <article key={partner.name} className="flex flex-col bg-ivory">
+                <div className="flex h-44 items-center justify-center px-8 py-10">
+                  <img
+                    src={partner.logo}
+                    alt={`${partner.name} logo`}
+                    loading="lazy"
+                    className="max-h-full w-auto max-w-full object-contain"
+                  />
+                </div>
+                <div className="mt-auto border-t border-silver/60 px-6 py-5">
+                  <p className="font-display text-[0.68rem] uppercase tracking-[0.18em] text-wine">
+                    {partner.focus}
+                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-oxford-blue/80">
+                    ({partner.detail})
+                  </p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>
