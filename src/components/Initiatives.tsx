@@ -1,9 +1,9 @@
 import equityImage from "@/assets/initiative-equity.jpg";
 import aiImage from "@/assets/initiative-ai.jpg";
 import mentorshipImage from "@/assets/initiative-mentorship.jpg";
-import pbbLogo from "@/assets/partners/pbb.png.asset.json";
-import tcbmeLogo from "@/assets/partners/tcbme.png.asset.json";
-import pynLogo from "@/assets/partners/pyn.png.asset.json";
+import pbbLogo from "@/assets/partners/pbb.png";
+import tcbmeLogo from "@/assets/partners/tcbme.png";
+import pynLogo from "@/assets/partners/pyn.png";
 import brilliantLogo from "@/assets/partners/brilliant-cities.svg";
 
 const initiatives = [
