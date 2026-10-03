@@ -1,5 +1,3 @@
-import equityImage from "@/assets/initiative-equity.jpg";
-import aiImage from "@/assets/initiative-ai.jpg";
 import tcbmeLogo from "@/assets/partners/tcbme.png";
 import pynLogo from "@/assets/partners/pyn.png";
 import brilliantLogo from "@/assets/partners/brilliant-cities.svg";
