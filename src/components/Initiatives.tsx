@@ -1,5 +1,3 @@
-import equityImage from "@/assets/initiative-equity.jpg";
-import aiImage from "@/assets/initiative-ai.jpg";
 import tcbmeLogo from "@/assets/partners/tcbme.png";
 import pynLogo from "@/assets/partners/pyn.png";
 import brilliantLogo from "@/assets/partners/brilliant-cities.svg";
@@ -8,8 +6,6 @@ const initiatives = [
   {
     number: "01",
     title: "AI's Impact on Education",
-    image: aiImage,
-    alt: "A high school student studying on a laptop in a modern study space",
     intro:
       "We study how artificial intelligence is reshaping classrooms, and help partners adopt it responsibly.",
     points: [
@@ -21,8 +17,6 @@ const initiatives = [
   {
     number: "02",
     title: "Strategy on Educational Equal Opportunity",
-    image: equityImage,
-    alt: "Elementary school students working at their desks in a bright classroom",
     intro:
       "We build practical strategies that help education organizations expand opportunity across Philadelphia.",
     points: [
@@ -88,21 +82,9 @@ const Initiatives = () => {
         {initiatives.map((item, index) => (
           <div
             key={item.number}
-            className={`grid items-center gap-7 py-12 sm:grid-cols-12 md:gap-10 md:py-14 ${
-              index > 0 ? "rule" : "mt-10 md:mt-12"
-            }`}
+            className={`py-12 md:py-14 ${index > 0 ? "rule" : "mt-10 md:mt-12"}`}
           >
-            <div className={`sm:col-span-5 ${index % 2 === 1 ? "sm:order-2" : ""}`}>
-              <img
-                src={item.image}
-                alt={item.alt}
-                loading="lazy"
-                width={1200}
-                height={912}
-                className="aspect-[4/3] w-full object-cover sm:max-h-[300px]"
-              />
-            </div>
-            <div className={`sm:col-span-7 ${index % 2 === 1 ? "sm:order-1" : ""}`}>
+            <div className="max-w-3xl">
               <p className="font-display text-xs uppercase tracking-[0.22em] text-wine">
                 {item.number}
               </p>
