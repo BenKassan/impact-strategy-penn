@@ -17,15 +17,10 @@ const About = () => {
             </div>
             <div className="md:col-span-8">
               <p className="max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
-                Education Consulting at Penn is a student-run consultancy for organizations
-                working to close Philadelphia's opportunity gap. Our partners include nonprofits,
-                schools and youth programs, and we bring them research, financial analysis and
-                strategy they would otherwise have to buy.
-              </p>
-              <p className="mt-6 max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
-                Each project pairs a small team of trained Penn consultants with one partner and
-                one defined deliverable. The work is built to be used after the semester ends,
-                from AI curricula to growth strategies.
+                Education Consulting at Penn is a student-run consultancy helping education and
+                youth organizations prepare young people for an AI-driven world. We build AI
+                curricula and growth strategy (free of charge) for partners that have served over
+                250,000 young people.
               </p>
             </div>
           </div>
