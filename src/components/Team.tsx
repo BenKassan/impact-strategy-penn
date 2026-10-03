@@ -97,10 +97,6 @@ const Team = () => {
           <p className="font-display text-xs uppercase tracking-[0.22em] text-wine">
             Founders
           </p>
-          <p className="mt-4 max-w-[60ch] leading-relaxed text-oxford-blue/80">
-            Ben Kassan and Oscar Schwartz founded ECP. They no longer run day-to-day operations,
-            but the organization is built on their groundwork.
-          </p>
 
           <div className="mt-12 grid gap-x-10 gap-y-14 sm:grid-cols-2">
             {founders.map((member) => (
