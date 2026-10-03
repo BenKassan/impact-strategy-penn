@@ -14,7 +14,7 @@ const teamMembers = [
     name: "Ronan Meltzer",
     role: "Co-President",
     image: "/lovable-uploads/ronan-meltzer.png",
-    education: "Junior, College of Arts & Sciences — Mathematics & Economics",
+    education: "Sophomore, College of Arts & Sciences — Mathematics & Economics",
     description:
       "Ronan is from Johannesburg and works on making education accessible through technology and tutoring. Before Penn, he founded a tutoring program that grew to 300+ volunteers teaching 3,000+ hospitalized children across Africa, and built Dare2Solve, a math platform with 200K monthly users. He joined ECP in his freshman fall. ronanmel@sas.upenn.edu",
   },
