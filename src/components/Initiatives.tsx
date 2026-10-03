@@ -1,7 +1,5 @@
 import equityImage from "@/assets/initiative-equity.jpg";
 import aiImage from "@/assets/initiative-ai.jpg";
-import mentorshipImage from "@/assets/initiative-mentorship.jpg";
-import pbbLogo from "@/assets/partners/pbb.png";
 import tcbmeLogo from "@/assets/partners/tcbme.png";
 import pynLogo from "@/assets/partners/pyn.png";
 import brilliantLogo from "@/assets/partners/brilliant-cities.svg";
@@ -9,19 +7,6 @@ import brilliantLogo from "@/assets/partners/brilliant-cities.svg";
 const initiatives = [
   {
     number: "01",
-    title: "Educational Equal Opportunity",
-    image: equityImage,
-    alt: "Elementary school students working at their desks in a bright classroom",
-    intro:
-      "We work to identify and remove the barriers that keep students from an equal shot at a quality education.",
-    points: [
-      "Map access gaps across Philadelphia schools and after-school programs",
-      "Build funding and resource strategies for partner nonprofits",
-      "Translate policy research into practical recommendations",
-    ],
-  },
-  {
-    number: "02",
     title: "AI's Impact on Education",
     image: aiImage,
     alt: "A high school student studying on a laptop in a modern study space",
@@ -34,44 +19,48 @@ const initiatives = [
     ],
   },
   {
-    number: "03",
-    title: "Mentorship",
-    image: mentorshipImage,
-    alt: "A college-age mentor helping a younger student with schoolwork",
+    number: "02",
+    title: "Strategy on Educational Equal Opportunity",
+    image: equityImage,
+    alt: "Elementary school students working at their desks in a bright classroom",
     intro:
-      "We connect students with mentors who provide guidance, structure, and a path forward.",
+      "We build practical strategies that help education organizations expand opportunity across Philadelphia.",
     points: [
-      "Build and refine mentorship program models for partners",
-      "Support tutoring and college readiness pipelines",
-      "Measure engagement and long-term student impact",
+      "Map access gaps across schools and after-school programs",
+      "Build funding, growth, and resource strategies for partner nonprofits",
+      "Translate research into practical recommendations",
     ],
   },
 ];
 
 const partners = [
   {
-    name: "Philly Book Bank",
-    focus: "Strategy Project",
-    detail: "250,000+ books distributed over the past five years",
-    logo: pbbLogo,
-  },
-  {
-    name: "TCBMe",
-    focus: "AI-Integration",
-    detail: "Edtech NGO",
-    logo: tcbmeLogo,
+    name: "Brilliant Cities",
+    position: "One of the country's most proven early-childhood models.",
+    metrics: [{ figure: "24,000", label: "people served across 24 hubs" }],
+    work: "Built the strategy for its expansion into Philadelphia and a blueprint for 31 cities.",
+    logo: brilliantLogo,
   },
   {
     name: "Philadelphia Youth Network",
-    focus: "AI-Integration",
-    detail: "Largest youth-workforce program in Philadelphia, having served over 200,000+",
+    position: "Philadelphia's lead youth workforce organisation, and a national model.",
+    metrics: [
+      { figure: "250,000+", label: "young people put to work" },
+      { figure: "$51M+", label: "paid to youth in wages" },
+      { figure: "140+", label: "organisations coordinated" },
+    ],
+    work: "Built AI curricula preparing PYN's youth for an AI-driven workplace.",
     logo: pynLogo,
   },
   {
-    name: "Brilliant Cities",
-    focus: "Strategy",
-    detail: "Neighborhood-powered model for early childhood success",
-    logo: brilliantLogo,
+    name: "TCBMe",
+    position: "A pioneer at the intersection of AI skills and youth well-being.",
+    metrics: [
+      { figure: "Top 1%", label: "of US nonprofits — five-time Candid Transparency Seal" },
+      { figure: "IRB", label: "funded research backing its work" },
+    ],
+    work: "Designed a gamified AI curriculum for TCBMe's workforce programme.",
+    logo: tcbmeLogo,
   },
 ];
 
@@ -88,32 +77,32 @@ const Initiatives = () => {
           </div>
           <div className="md:col-span-8">
             <p className="max-w-[65ch] text-lg leading-relaxed text-oxford-blue/85">
-              Our work is organized around three focus areas. Each one pairs a student
+              Our work is organized around two focus areas. Each one pairs a student
               consulting team with a partner organization and a defined deliverable.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="mx-auto max-w-[1180px] px-6 pb-20 lg:px-10 md:pb-28">
         {initiatives.map((item, index) => (
           <div
             key={item.number}
-            className={`grid items-center gap-10 py-20 md:grid-cols-2 md:gap-16 ${
-              index > 0 ? "rule" : "mt-16"
+            className={`grid items-center gap-7 py-12 sm:grid-cols-12 md:gap-10 md:py-14 ${
+              index > 0 ? "rule" : "mt-10 md:mt-12"
             }`}
           >
-            <div className={index % 2 === 1 ? "md:order-2" : ""}>
+            <div className={`sm:col-span-5 ${index % 2 === 1 ? "sm:order-2" : ""}`}>
               <img
                 src={item.image}
                 alt={item.alt}
                 loading="lazy"
                 width={1200}
                 height={912}
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/3] w-full object-cover sm:max-h-[300px]"
               />
             </div>
-            <div className={index % 2 === 1 ? "md:order-1" : ""}>
+            <div className={`sm:col-span-7 ${index % 2 === 1 ? "sm:order-1" : ""}`}>
               <p className="font-display text-xs uppercase tracking-[0.22em] text-wine">
                 {item.number}
               </p>
@@ -142,7 +131,7 @@ const Initiatives = () => {
       </div>
 
       {/* Featured Partnerships */}
-      <div className="bg-oxford-blue py-24 md:py-32">
+      <div className="overflow-hidden bg-oxford-blue py-20 md:py-24">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
           <div className="grid gap-6 md:grid-cols-12">
             <div className="md:col-span-4">
@@ -155,32 +144,51 @@ const Initiatives = () => {
             </div>
             <div className="md:col-span-8">
               <p className="max-w-[60ch] text-lg leading-relaxed text-ivory/80">
-                Every engagement pairs a student consulting team with a Philadelphia
-                organization working on the ground. These are the partners we are building
-                with right now.
+                The figures lead each story, while every engagement pairs research with a
+                practical strategy built for the organisation's next stage.
               </p>
             </div>
           </div>
+        </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {partners.map((partner) => (
-              <article key={partner.name} className="flex flex-col bg-ivory">
-                <div className="flex h-44 items-center justify-center px-8 py-10">
+        <div className="partner-marquee mt-12" aria-label="Featured partner organizations">
+          <div className="partner-marquee-track">
+            {[...partners, ...partners].map((partner, index) => (
+              <article
+                key={`${partner.name}-${index}`}
+                className="flex w-[min(84vw,27rem)] shrink-0 flex-col bg-ivory p-6 md:w-[27rem] md:p-8"
+                aria-hidden={index >= partners.length}
+              >
+                <div className="flex h-24 items-center justify-start border-b border-silver/60 pb-6">
                   <img
                     src={partner.logo}
-                    alt={`${partner.name} logo`}
+                    alt={index < partners.length ? `${partner.name} logo` : ""}
                     loading="lazy"
-                    className="max-h-full w-auto max-w-full object-contain"
+                    className="max-h-full w-auto max-w-[75%] object-contain object-left"
                   />
                 </div>
-                <div className="border-t border-silver/60 px-6 py-5">
-                  <p className="font-display text-[0.68rem] uppercase tracking-[0.18em] text-wine">
-                    {partner.focus}
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-oxford-blue/80">
-                    ({partner.detail})
-                  </p>
-                </div>
+                <h4 className="mt-6 font-serif text-2xl text-penn-blue">{partner.name}</h4>
+                <p className="mt-2 min-h-[3rem] text-sm leading-relaxed text-oxford-blue/75">
+                  {partner.position}
+                </p>
+                <ul className="mt-5 space-y-3 border-t border-silver/60 pt-5">
+                  {partner.metrics.map((metric) => {
+                    return (
+                      <li key={metric.label} className="flex items-baseline gap-2 text-oxford-blue">
+                        <strong className="shrink-0 font-serif text-xl font-normal text-wine">
+                          {metric.figure}
+                        </strong>
+                        <span className="text-sm leading-snug">{metric.label}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <p className="mt-auto border-t border-silver/60 pt-5 text-sm leading-relaxed text-oxford-blue/85">
+                  <span className="font-display text-xs uppercase tracking-[0.14em] text-wine">
+                    ECP's work
+                  </span>
+                  <span className="mt-2 block">{partner.work}</span>
+                </p>
               </article>
             ))}
           </div>
