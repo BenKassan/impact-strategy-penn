@@ -75,7 +75,7 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="mt-20 grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-20 grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member) => (
             <article key={member.name} className="group">
               <div className="overflow-hidden bg-ivory">
